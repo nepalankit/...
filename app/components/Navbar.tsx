@@ -1,6 +1,8 @@
+"use client";
 import Wrapper from "./Wrapper";
 import Logo from "./navbar/Logo";
 import Search from "./navbar/Search";
+import UserMenu from "./navbar/UserMenu";
 
 export default function Navbar() {
   return (
@@ -20,6 +22,7 @@ export default function Navbar() {
           >
             <Logo />
             <Search />
+            <UserMenu />
           </div>
         </Wrapper>
       </div>
