@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Modal from "./components/modal/Modal";
+import RegisterModal from "./components/modal/RegisterModal";
 
 export const metadata: Metadata = {
   title: "Booking.com",
@@ -20,8 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <RegisterModal />
         <Navbar />
-        <Modal title="Hello world" isOpen />
+
         {children}
       </body>
     </html>
