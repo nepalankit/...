@@ -137,12 +137,12 @@ const Modal: React.FC<ModalProps> = ({
                     disabled={disabled}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };
