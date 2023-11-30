@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Modal from "./components/modal/Modal";
 import RegisterModal from "./components/modal/RegisterModal";
 import ToasterProvider from "./providers/ToasterProvider";
+import LoginModal from "./components/modal/LoginModal";
 
 export const metadata: Metadata = {
   title: "Booking.com",
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ToasterProvider />
+        <LoginModal />
         <RegisterModal />
         <Navbar />
 
