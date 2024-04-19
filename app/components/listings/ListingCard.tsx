@@ -10,9 +10,10 @@ import Image from "next/image";
 import HeartButton from "../HeartButton";
 import Button from "../Button";
 import { safeListings, safeUser } from "@/app/types";
+import { safeReservation } from "../../types";
 interface ListingCardProps {
   data: safeListings;
-  reservation?: Reservation;
+  reservation?: safeReservation;
   onAction?: (id: string) => void;
   disabled?: boolean;
   actionlabel?: string;

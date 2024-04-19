@@ -1,8 +1,16 @@
 "use client";
+import useCountries from "@/app/hooks/useCountries";
+import useSearchModal from "@/app/hooks/useSearchModal";
+import { useSearchParams } from "next/navigation";
 import { BiSearch } from "react-icons/bi";
 const Search = () => {
+  const searchModal = useSearchModal();
+  const params = useSearchParams();
+  const { getByValue } = useCountries();
+
   return (
     <div
+      onClick={searchModal.onOpen}
       className="border-[1px]
     w-full
     md:w-auto
